@@ -1,5 +1,5 @@
 # 1. Basic Variable Declaration  & Data Type
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 name = "Daa"
 age = 21
 height = 159.7
@@ -13,14 +13,14 @@ print(type(is_student))  # Output: <class 'bool'>
 
 
 # 2. Type Hint
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 def greet(name: str, age: int) -> str:
     return f"{name} is {age} years old."
 
 
 
 # 3. Dynamic Typing in Variables
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 x = 10
 print(tyep(x))  # Output: int
 
@@ -35,7 +35,7 @@ The type() function helps you check what type of data a variable currently holds
 
 
 # 4. Type Conversion
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 a = "100"
 b = int(a)  # str -> int
 
@@ -48,7 +48,7 @@ print(type(d))  # Ouput: str
 
 
 # 5. id() and memory address
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 x = 10
 y = 10
 print(id(x), id(y))  # Same object (small integers are cached)
@@ -68,7 +68,7 @@ So even if they have the same value, they may refer to different objects in memo
 
 
 # 6. Immutable types vs Mutable types
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 # Immutable types: int, float, str, tuple
 a = "hi"
 print(id(a))
@@ -84,7 +84,7 @@ print(id(lst))  # The same object is modified (ID stays the same)
 
 
 # 7. Declaring Multiple Variables and Unpacking
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 # Assign multiple variables simultaneously
 x, y, z = 1, 2, 3
 
@@ -98,7 +98,7 @@ print(x, y)  # Output: 2 1
 
 
 # 8. Constant-like variable (Uppercase Naming Convention)
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 PI = 3.14159
 GRAVITY = 9.8
 
@@ -110,7 +110,7 @@ but by convention, variabels with names in all uppercase letters are treated as 
 
 
 # 9. None and Null
-# --------------------------------------------
+# -----------------------------------------------------------------------------------------------
 x = None
 print(x is None)  # Output: True
 
