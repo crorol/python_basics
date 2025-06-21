@@ -22,7 +22,7 @@ def greet(name: str, age: int) -> str:
 # 3. Dynamic Typing in Variables
 # -----------------------------------------------------------------------------------------------
 x = 10
-print(tyep(x))  # Output: int
+print(type(x))  # Output: int
 
 x = "hello"
 print(type(x))  # Output: str
