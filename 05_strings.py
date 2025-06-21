@@ -1,6 +1,8 @@
-# -----------------------------------------
-# 📌 Strings
-# -----------------------------------------
+text = "Python is fun!"
+print(text.upper())     # Output: PYTHON IS FUN!
+print(text[0:9])        # Output: Python is
+print(len(text))        # Output: 14
+print(f"Text: {text}")  # Output: Text: Python is fun!
 
 
 # Escape Character
