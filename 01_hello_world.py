@@ -1,16 +1,42 @@
-# --------------------------
 # 1. Basic Output
-# --------------------------
-print("Hello, World!")   
-# == Output ================
-# Hello, World!
-# ==========================
+# --------------------------------------------
+print("Hello, World!")  # Output: Hello, World!
 
 
-# --------------------------
+
 # 2. Several Values Output
-# --------------------------
-print("Hello", "Python", "World")
-# == Output ================
-# Hello Python World
-# ==========================
+# --------------------------------------------
+print("Hello", "Python", "World")  # Output: Hello Python World
+
+
+
+# 3. sep (separator), end (end of line)
+# --------------------------------------------
+print("apple", "banana", "cherry", sep=" | ")  # Output: apple | banana | cherry
+
+print("line1", end=" ")  # Output: line1 line2
+print("line2")  
+
+
+
+# 4. Escape Character
+# --------------------------------------------
+print("I said, \"Hello\"")  # \"
+print("First line\nSecond line")  # \n
+print("Item\tPrice")  # \t
+
+
+
+# 4. Format Strings in Python
+# --------------------------------------------
+name = "Daa"
+age = 21
+
+# 1: % format
+print("My name is %s and I am %d years old." % (name, age))
+
+# 2: .format()
+print("My name is {} and I am {} years old.".format(name, age))
+
+# 3: f-string
+print(f"My name is {name} and I am {age} years old.")
