@@ -1,50 +1,74 @@
-text = "Python is fun!"
-print(text.upper())     # Output: PYTHON IS FUN!
-print(text[0:9])        # Output: Python is
-print(len(text))        # Output: 14
-print(f"Text: {text}")  # Output: Text: Python is fun!
+# 1. Ways to declare strings
+# -----------------------------------------------------------------------------------------------
+s1 = "Hello"
+s2 = 'Python'
+s3 = """This is
+a multi-line string"""
 
 
-# Escape Character
-# \" (double quotes) & \' (single quotes)
-print("\"Hello Python\" I said")          # Output: "Hello Python" I said
-print('\'Python is amazing\' I thought')  # Output: 'Python is amazing' I thought
-# \n (new line) & \t (tab)
-print("Hello\nPython")  # Output: Hello
-                        #         Python
-print("Hello\tPython")  # Output: Hello    World
+
+# 2. String Indexing & Slicing
+# -----------------------------------------------------------------------------------------------
+text = "Python"
+
+print(text[0])     # 'P'   (first character)
+print(text[-1])    # 'n'   (last character)
+
+print(text[1:4])   # 'yth' (characters from index 1 to 3)
+print(text[:2])    # 'Py'  (characters from start to index 1)
+print(text[::2])   # 'Pto' (every 2nd character)
 
 
-# Zero Index
-print("Hello"[0])    # Output: H
-print("Hello"[1])    # Output: e
-print("Hello"[2])    # Output: l
-print("Hello"[3])    # Output: l
-print("Hello"[4])    # Output: o
 
-print("Hello"[-1])   # Output: o
-print("Hello"[-2])   # Output: l
-print("Hello"[-3])   # Output: l
-print("Hello"[-4])   # Output: e
-print("Hello"[-5])   # Output: H
+# 3. Strings are Immutable
+# -----------------------------------------------------------------------------------------------
+text = "hello"
+# text[0] = "H"  ❌ Error (strings are immutable)
+
+text = "H" + text[1:]  # You must create a new string
+print(text)   # 'Hello'
 
 
-# Slicing [:] (String range selection operator)
-print("Hello"[1:4])  # Output: ell
-print("Hello"[0:2])  # Output: He
-print("Hello"[1:])   # Output: ello
-print("Hello"[:3])   # Output: Hel
-print("Hello"[7])    # Output: Traceback (most recent call last):
-                     #           File "<python-input-19>", line 1, in <module>
-                     #             print("Hello"[7])
-                     #                   ~~~~~~~^^^
-                     #         IndexError: string index out of range
+
+# 4. Common String Methods
+# -----------------------------------------------------------------------------------------------
+s = "  Hello Python!  "
+
+print(s.lower())   # lowercase
+print(s.upper())   # uppercase
+print(s.strip())   # remove leading and trailing whitespace
+print(s.replace("Python", "World"))  # replace substring
+print(s.startswith("  He"))  # True  (starts with the given substring)
+print(s.endswith("!  "))     # True  (ends with the given substring)
 
 
-# List Slicing
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-print(numbers[0:12:2])  # Output: [1, 3, 5, 7, 9, 11]
-print(numbers[::1])     # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-print(numbers[::4])     # Output: [1, 5, 9, 13]
-print(numbers[::-1])    # Output: [13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-print(numbers[::-3])    # OUtput: [13, 10, 7, 4, 1]
+
+# 5. String Search
+# -----------------------------------------------------------------------------------------------
+s = "Data Science"
+
+print("Sci" in s)       # True (checks if substring exists)
+print(s.find("Sci"))    # 5 (returns the index, -1 if not found)
+print(s.index("Sci"))   # 5 (returns the index, raises an error if not found)
+
+
+
+# 6. String Splitting & Joining
+# -----------------------------------------------------------------------------------------------
+s = "apple, banana, cherry"
+fruits = s.split(",")
+print(fruits)   # ['apple', ' banana', ' cherry']
+
+joined = " | ".join(fruits)
+print(joined)   # apple |  banana |  cherry
+
+
+
+# 7. String Sorting
+# -----------------------------------------------------------------------------------------------
+s = "42"
+print(s.rjust(5))        # '   42'
+print(s.ljust(5, '0'))   # '42000'
+print(s.center(7, '-'))  # '--42---'
+
+
