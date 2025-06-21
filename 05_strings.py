@@ -72,3 +72,14 @@ print(s.ljust(5, '0'))   # '42000'
 print(s.center(7, '-'))  # '--42---'
 
 
+
+# 8. Unicode Characters and Emojis
+# -----------------------------------------------------------------------------------------------
+# Unicode characters
+print("Hello, world! \u2600")  # Prints: Hello, world! ☀ (sun symbol)
+
+# Emoji using Unicode
+print("I love Python! 🐍")      # Prints: I love Python! 🐍
+
+# Emoji with Unicode code point
+print("Smiling face: \U0001F600")  # Prints: Smiling face: 😀
