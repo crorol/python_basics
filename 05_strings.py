@@ -32,7 +32,7 @@ print("Hello"[1:4])  # Output: ell
 print("Hello"[0:2])  # Output: He
 print("Hello"[1:])   # Output: ello
 print("Hello"[:3])   # Output: Hel
-#print("Hello"[7])    # Output: Traceback (most recent call last):
+print("Hello"[7])    # Output: Traceback (most recent call last):
                      #           File "<python-input-19>", line 1, in <module>
                      #             print("Hello"[7])
                      #                   ~~~~~~~^^^
