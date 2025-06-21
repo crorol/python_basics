@@ -2,7 +2,6 @@
 # 📌 Data Type and Strings
 # -----------------------------------------
 
-
 # string: "Hello Python"
 # number: 11, 20.24
 # boolean: True, False
