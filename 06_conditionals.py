@@ -72,39 +72,35 @@ if -1:
     print("Will run")    # Any non-zero number -> True
 
 '''
-    In Python, 
+In Python, the following values are considered Falsy:
+0, an empty string(""), an empty list([]), an empty dictionary({}), None, and False.
+'''
 
 
 
-
-# 5. Conditional Expression (Ternary Operator)
+# 7. Chaining Multiple Comparison Operators
 # -----------------------------------------------------------------------------------------------
+x = 5
+if 1 < x < 10:
+    print("x is greater than 1 and less than 10.")
 
 
 
-
-# 5. Conditional Expression (Ternary Operator)
+# 8. pass keyword (Used for Empty Blocks)
 # -----------------------------------------------------------------------------------------------
+if True:
+    pass   # Does nothing but is syntactically required
 
 
 
-
-# 5. Conditional Expression (Ternary Operator)
+# 10. Common Mistakes in Conditional Expressions
 # -----------------------------------------------------------------------------------------------
+x = None
 
+# Incorrect way (also passes when x is 0)
+if x:
+    print("x exists")
 
-
-
-# 5. Conditional Expression (Ternary Operator)
-# -----------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-    
+# Correct way
+if x is not None:
+    print("x is not None")
