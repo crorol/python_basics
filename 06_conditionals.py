@@ -10,7 +10,7 @@ else:
 
 
 
-# 2. Handling Multiple Conditions with elif
+# 2. Handling Multiple Conditions with `elif`
 # -----------------------------------------------------------------------------------------------
 score = 85
 
@@ -25,7 +25,7 @@ else:
 
 
 
-# 3. Nested if Statements
+# 3. Nested `if` Statements
 # -----------------------------------------------------------------------------------------------
 user = "admin"
 logged_in = True
@@ -40,7 +40,7 @@ else:
 
 
 
-# 4. Combining Logical Operators (and, or, not)
+# 4. Combining Logical Operators (`and`, `or`, `not`)
 # -----------------------------------------------------------------------------------------------
 age = 25
 has_id = True
@@ -86,7 +86,7 @@ if 1 < x < 10:
 
 
 
-# 8. pass keyword (Used for Empty Blocks)
+# 8. `pass` keyword (Used for Empty Blocks)
 # -----------------------------------------------------------------------------------------------
 if True:
     pass   # Does nothing but is syntactically required
