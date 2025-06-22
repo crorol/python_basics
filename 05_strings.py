@@ -25,7 +25,7 @@ print(text[::2])   # 'Pto' (every 2nd character)
 text = "hello"
 # text[0] = "H"  ❌ Error (strings are immutable)
 
-text = "H" + text[1:]  # You must create a new string
+text = "H" + text[1:]   # You must create a new string
 print(text)   # 'Hello'
 
 
@@ -37,9 +37,9 @@ s = "  Hello Python!  "
 print(s.lower())   # lowercase
 print(s.upper())   # uppercase
 print(s.strip())   # remove leading and trailing whitespace
-print(s.replace("Python", "World"))  # replace substring
-print(s.startswith("  He"))  # True  (starts with the given substring)
-print(s.endswith("!  "))     # True  (ends with the given substring)
+print(s.replace("Python", "World"))   # replace substring
+print(s.startswith("  He"))   # True  (starts with the given substring)
+print(s.endswith("!  "))      # True  (ends with the given substring)
 
 
 
@@ -67,19 +67,19 @@ print(joined)   # apple |  banana |  cherry
 # 7. String Sorting
 # -----------------------------------------------------------------------------------------------
 s = "42"
-print(s.rjust(5))        # '   42'
-print(s.ljust(5, '0'))   # '42000'
-print(s.center(7, '-'))  # '--42---'
+print(s.rjust(5))         # '   42'
+print(s.ljust(5, '0'))    # '42000'
+print(s.center(7, '-'))   # '--42---'
 
 
 
 # 8. Unicode Characters and Emojis
 # -----------------------------------------------------------------------------------------------
 # Unicode characters
-print("Hello, world! \u2600")  # Prints: Hello, world! ☀ (sun symbol)
+print("Hello, world! \u2600")      # Hello, world! ☀ (sun symbol)
 
 # Emoji using Unicode
-print("I love Python! 🐍")      # Prints: I love Python! 🐍
+print("I love Python! 🐍")          # I love Python! 🐍
 
 # Emoji with Unicode code point
-print("Smiling face: \U0001F600")  # Prints: Smiling face: 😀
+print("Smiling face: \U0001F600")   # Smiling face: 😀
