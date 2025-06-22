@@ -1,19 +1,22 @@
-# 1. Basic Variable Declaration  & Data Type
+# 1. Basic Variable Declaration
 # -----------------------------------------------------------------------------------------------
 name = "Daa"
 age = 21
 height = 159.7
 is_student = True
 
-print(type(name))        # Output: <class 'str'>
-print(type(age))         # Output: <class 'int'>
-print(type(height))      # Output: <class 'float'>
-print(type(is_student))  # Output: <class 'bool'>
+print(name, age, height, is_student)   # Daa 21 159.7 True
 
 
 
-# 2. Type Hint
+# 2. Checking Data Types and Type Hint
 # -----------------------------------------------------------------------------------------------
+print(type(name))         # <class 'str'>
+print(type(age))          # <class 'int'>
+print(type(height))       # <class 'float'>
+print(type(is_student))   # <class 'bool'>
+
+# Type Hint (Python 3.5+)
 def greet(name: str, age: int) -> str:
     return f"{name} is {age} years old."
 
@@ -22,10 +25,10 @@ def greet(name: str, age: int) -> str:
 # 3. Dynamic Typing in Variables
 # -----------------------------------------------------------------------------------------------
 x = 10
-print(type(x))  # Output: int
+print(type(x))   # int
 
 x = "hello"
-print(type(x))  # Output: str
+print(type(x))   # str
 
 '''
 In Python, variables are dynamically typed,
@@ -37,25 +40,25 @@ The type() function helps you check what type of data a variable currently holds
 # 4. Type Conversion
 # -----------------------------------------------------------------------------------------------
 a = "100"
-b = int(a)  # str -> int
+b = int(a)   # str -> int
 
 c = 3.14
-d = str(c)  # float -> str
+d = str(c)   # float -> str
 
-print(type(b))  # Ouput: int
-print(type(d))  # Ouput: str
+print(type(b))   # int
+print(type(d))   # str
 
 
 
-# 5. id() and memory address
+# 5. `id()` and memory address
 # -----------------------------------------------------------------------------------------------
 x = 10
 y = 10
-print(id(x), id(y))  # Same object (small integers are cached)
+print(id(x), id(y))   # Same object (small integers are cached)
 
 z = 1000
 w = 1000
-print(id(z), id(w))  # May be different (large integers are not always cached)
+print(id(z), id(w))   # May be different (large integers are not always cached)
 
 '''
 In Python, small integers (typically from -5 to 256) are cached and reused to save memory.
@@ -73,13 +76,13 @@ So even if they have the same value, they may refer to different objects in memo
 a = "hi"
 print(id(a))
 a += " there"
-print(id(a))  # A new object is created (different ID)
+print(id(a))    # A new object is created (different ID)
 
 # Mutable types: list, dict, set
 lst = [1, 2]
 print(id(lst))
 lst.append(3)
-print(id(lst))  # The same object is modified (ID stays the same)
+print(id(lst))   # The same object is modified (ID stays the same)
 
 
 
@@ -93,7 +96,7 @@ a, b = [10, 20]
 
 # Swap variables this way too
 x, y = y, x
-print(x, y)  # Output: 2 1
+print(x, y)  # 2 1
 
 
 
@@ -112,7 +115,7 @@ but by convention, variabels with names in all uppercase letters are treated as 
 # 9. None and Null
 # -----------------------------------------------------------------------------------------------
 x = None
-print(x is None)  # Output: True
+print(x is None)  # True
 
 '''
 In Python, None is a special built-in constant that represents the absence of a value.
