@@ -29,7 +29,7 @@ except Exception as e:
 
 
 
-# 4. else and finally
+# 4. `else` and `finally`
 # -----------------------------------------------------------------------------------------------
 try:
     print("Division result:", 10 / 2)
