@@ -107,8 +107,10 @@ You can manage a list of packages using a `requirements.txt` file.
 
 # Module vs Package vs Library
 # -----------------------------------------------------------------------------------------------
+'''
 | Concept  | Example             | Explanation                                                     |
 |----------|---------------------|-----------------------------------------------------------------|
 | Module   | `math.py`           | A single `.py` file                                             |
 | Package  | `utils/`            | A folder containing multiple modules                            |
 | Library  | `requests`, `numpy` | A collection of reusable code (usually distributed as packages) |	
+'''
