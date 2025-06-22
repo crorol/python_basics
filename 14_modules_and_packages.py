@@ -3,8 +3,25 @@
 '''
 A module means a single .py file.
 You can import it and use it in other files!
-'''
 
+Commonly Used Built-in Modules
+| Module Name  | Description                                                   |
+|--------------|---------------------------------------------------------------|
+| os           | Interact with the operating system (files, directories, etc.) |
+| sys          | Access Python interpreter-related functions                   |
+| datetime     | Handle dates and times                                        |	
+| re           | Support for regular expressions                               |
+| random       | Generate random numbers                                       |
+| math         | Mathematical functions (trigonometry, logarithms, etc.)       |
+| json         | JSON encoding and decoding                                    |
+| urllib       | Open and handle URLs and request                              |
+| zipfile      | Read and write ZIP files                                      |
+| subprocess   | Execute external processes                                    |
+| threading    | Create and control threads                                    |
+| time         | Time-related functions (delays, measurements, etc.)           |
+| collections  | Specialized data structures like deque and Counter            |
+| pickle       | Serialize and deserialize Python objects                      |
+'''
 # Example: math module
 import math
 print(math.sqrt(25))   # 5.0
