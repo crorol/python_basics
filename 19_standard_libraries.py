@@ -1,20 +1,24 @@
-import datetime
-import os
+# 1. `math` - related to mathematics
+# -----------------------------------------------------------------------------------------------
+import math
+
+print(math.sqrt(16))       # 4.0
+print(math.factorial(5))   # 120 (5! = 5 * 4 * 3 * 2 * 1 = 120)
+print(math.pi)             # 3.14159...
+
+
+
+# 2. `random` - random number generation
+# -----------------------------------------------------------------------------------------------
 import random
 
-print(datetime.date.today())
-print(os.getcwd())
-print(random.choice(["a", "b", "c"]))
+print(random.randint(1, 10))            # Integer between 1 and 10 (inclusive)
+print(random.choice(['a', 'b', 'c']))   # Randomly selects one element from the list
+print(random.sample(range(100), 5))     # Picks 5 unique samples from numbers 0 to 99
 
 
 
-# 2. 
-# -----------------------------------------------------------------------------------------------
-
-
-
-
-# 3. 
+# 3. `datetime` - date and time handling
 # -----------------------------------------------------------------------------------------------
 
 
