@@ -1,8 +1,8 @@
 # 1. Opening a File
 # -----------------------------------------------------------------------------------------------
-f = open("example.txt", "w")  # Open the file in write mode
-f.write("Hello, file!")       # Write text to the file
-f.close()                     # Close the file
+f = open("example.txt", "w")   # Open the file in write mode
+f.write("Hello, file!")        # Write text to the file
+f.close()                      # Close the file
 
 '''
 "r"  Read mode (default)
@@ -22,19 +22,19 @@ example mode combinations
 
 # 2. Reading a File
 # -----------------------------------------------------------------------------------------------
-f = open("example.txt", "r")  # Open the file in read mode
-content = f.read()            # Read the entire contents of the file
-print(content)                # Print the contents to the screen
-f.close()                     # Close the file
+f = open("example.txt", "r")   # Open the file in read mode
+content = f.read()             # Read the entire contents of the file
+print(content)                 # Print the contents to the screen
+f.close()                      # Close the file
 
 
 
-# 3. Using the with statement (automatically closes the file)
+# 3. Using the `with` statement (automatically closes the file)
 # -----------------------------------------------------------------------------------------------
 with open("example.txt", "r") as f:
     text = f.read()
     print(text)
-# f.close() is automatically called after this block
+# `f.close()` is automatically called after this block
 
 
 
@@ -44,7 +44,7 @@ with open("multi_line.txt", "r") as f:
     lines = f.readlines()  # Read all lines into a list
 
 for line in lines:
-    print(line.strip())   # Remove newline character at the end and print each line
+    print(line.strip())    # Remove newline character at the end and print each line
 '''
 or
 '''
@@ -78,12 +78,12 @@ with open("user_input.txt", "w") as f:
 
 
 
-# 7. "w+", "r+", "a+" mode (Read + Write)
+# 7. `"w+"`, `"r+"`, `"a+"` mode (Read + Write)
 # -----------------------------------------------------------------------------------------------
 with open("sample.txt", "w+") as f:
     f.write("Hello\n")
-    f.seek(0)       # Move the cursor back to the beginning
-    print(f.read()) # Reading is possible after writing
+    f.seek(0)        # Move the cursor back to the beginning
+    print(f.read())  # Reading is possible after writing
 
 '''
 "w+"  Write and Read mode (overwrites existing file)
