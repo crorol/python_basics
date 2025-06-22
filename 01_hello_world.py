@@ -1,20 +1,20 @@
 # 1. Basic Output
 # -----------------------------------------------------------------------------------------------
-print("Hello, World!")  # Output: Hello, World!
+print("Hello, World!")  # Hello, World!
 
 
 
 # 2. Several Values Output
 # -----------------------------------------------------------------------------------------------
-print("Hello", "Python", "World")  # Output: Hello Python World
+print("Hello", "Python", "World")  # Hello Python World
 
 
 
-# 3. sep (separator), end (end of line)
+# 3. `sep` (separator), `end` (end of line)
 # -----------------------------------------------------------------------------------------------
-print("apple", "banana", "cherry", sep=" | ")  # Output: apple | banana | cherry
+print("apple", "banana", "cherry", sep=" | ")  # apple | banana | cherry
 
-print("line1", end=" ")  # Output: line1 line2
+print("line1", end=" ")  # line1 line2
 print("line2")  
 
 
