@@ -3,7 +3,7 @@
 def greet():
     print("Hello!")
 
-greet()  # Call the function
+greet()   # Call the function
 
 
 
@@ -32,17 +32,17 @@ def square(x):
     return x ** 2
 
 result = square(5)
-print(result)  # 25
+print(result)   # 25
 
 
 
 # 5. Multiple Return Values
 # -----------------------------------------------------------------------------------------------
 def calc(a, b):
-    return a + b, a * b  # returns multiple values: sum and product
+    return a + b, a * b   # returns multiple values: sum and product
 
 add, mul = calc(3, 4)
-print(add, mul)  # 7 12 
+print(add, mul)   # 7 12 
 
 
 
@@ -51,17 +51,17 @@ print(add, mul)  # 7 12
 def introduce(name, age):
     print(f"{name} is {age} years old.")
 
-introduce("Daa", 21)               # positional arguments
-introduce(age=25, name="Hoyoung")  # keyword arguments (order doesn't matter)
+introduce("Daa", 21)                # positional arguments
+introduce(age=25, name="Hoyoung")   # keyword arguments (order doesn't matter)
 
 
 
-# 7. Variable Arguments (*args, **kwargs)
+# 7. Variable Arguments (`*args`, `**kwargs`)
 # -----------------------------------------------------------------------------------------------
 def add_all(*args):
     return sum(args)
 
-print(add_all(1, 2, 3, 4))  # 10
+print(add_all(1, 2, 3, 4))   # 10
 
 def print_info(**kwargs):
     for key, value in kwargs.items():
@@ -93,8 +93,8 @@ def whisper(text):
 def greet(func):
     print(func("Hello"))
 
-greet(shout)   # HELLO
-greet(whisper) # hello
+greet(shout)     # HELLO
+greet(whisper)   # hello
 
 
 
@@ -128,4 +128,4 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 
-print(factorial(5))  # 120
+print(factorial(5))   # 120
