@@ -5,7 +5,7 @@ t = (1, 2, 3)
 print(t[0])       # 1
 
 # Featrues: Ordered (supports indexing), Immutable (cannot be changed)
-t[0] = 10  # ❌ TypeError
+t[0] = 10   # ❌ TypeError
 
 # Unpacking (Assigning to Multiple Variables)
 a, b, c = (1, 2, 3)
@@ -32,8 +32,8 @@ print(person.keys())       # dict_keys(['name', 'job'])
 print(person.values())     # dict_values(['Daa', 'developer'])
 print(person.items())      # dict_items([('name', 'Daa'), ('job', 'developer')])
 
-# Safe Access: get()
-print(person.get("address", "Not available"))  # Returns default value if key is missing
+# Safe Access: `get()`
+print(person.get("address", "Not available"))   # Returns default value if key is missing
 
 # Using Loops
 for key, value in person.items():
@@ -45,7 +45,7 @@ for key, value in person.items():
 # -----------------------------------------------------------------------------------------------
 # Creation
 s = {1, 2, 3, 2, 1}
-print(s)  # {1, 2, 3} ← duplicates are removed
+print(s)   # {1, 2, 3} ← duplicates are removed
 
 # For Removing Duplicates
 names = ["Daa", "Hoyoung", "Daa", "Hodu"]
@@ -60,7 +60,7 @@ Because sets are unordered, the output order may change.
 a = {1, 2, 3}
 b = {3, 4, 5}
 
-print(a | b)  # Union -> {1, 2, 3, 4, 5}
-print(a & b)  # Intersection -> {3}
-print(a - b)  # Difference (elements in a but not in b) -> {1, 2}
-print(a ^ b)  # Symmetric difference (elements in a or b but not both) -> {1, 2, 4, 5}
+print(a | b)   # Union -> {1, 2, 3, 4, 5}
+print(a & b)   # Intersection -> {3}
+print(a - b)   # Difference (elements in a but not in b) -> {1, 2}
+print(a ^ b)   # Symmetric difference (elements in a or b but not both) -> {1, 2, 4, 5}
