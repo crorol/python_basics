@@ -1,7 +1,7 @@
 # 1. Input and Output related
 # -----------------------------------------------------------------------------------------------
-print("Hello")              # Display output on the screen
-name = input("What's your name? ")  # Get user input
+print("Hello")   # Display output on the screen
+name = input("What's your name? ")   # Get user input
 
 
 
@@ -71,9 +71,9 @@ filter(): filters elements that satisfy a condition
 
 # 7. Other useful built-in Functions
 # -----------------------------------------------------------------------------------------------
-len("hello")        # 5
-reversed("abc")     # ['c', 'b', 'a']
-all([True, True])   # True  (returns True if all elements are True)
-any([False, True])  # True  (returns True if any elements is True)
-chr(97)             # 'a'   (returns character for ASCII code 97)
-ord('a')            # 97    (returns ASCII code of character 'a')
+len("hello")         # 5
+reversed("abc")      # ['c', 'b', 'a']
+all([True, True])    # True  (returns True if all elements are True)
+any([False, True])   # True  (returns True if any elements is True)
+chr(97)              # 'a'   (returns character for ASCII code 97)
+ord('a')             # 97    (returns ASCII code of character 'a')
