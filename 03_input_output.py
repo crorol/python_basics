@@ -9,7 +9,7 @@ print(message)
 # 2. Input is Always a String
 # -----------------------------------------------------------------------------------------------
 age = input("How old are you? ")
-print(type(age))  # Output: <class 'str'>
+print(type(age))  # <class 'str'>
 
 
 
@@ -30,7 +30,7 @@ print(f"Sum: {a + b}")
 
 
 
-# 5. Converting Input in One Line Using map()
+# 5. Converting Input in One Line Using `map()`
 # -----------------------------------------------------------------------------------------------
 # Getting multiple numbers as a list
 numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
@@ -38,7 +38,7 @@ print("Numbers entered: ", numbers)
 
 
 
-# 6. Reading Multiple Lines of Input (Using for + input())
+# 6. Reading Multiple Lines of Input (Using `for` + `input()`)
 # -----------------------------------------------------------------------------------------------
 print("Enter 3 lines: ")
 lines = []
@@ -51,16 +51,16 @@ print("\n".join(lines))
 
 
 
-# 7. f-string Formatting
+# 7. `f-string` Formatting
 # -----------------------------------------------------------------------------------------------
 name = "Daa"
 score = 95.72
 
-print(f"{name}'s score is {score:.2f}.")  # Rounded to 2 decimal places
+print(f"{name}'s score is {score:.2f}.")   # Rounded to 2 decimal places
 
 
 
-# 8. Table-formatted Output Alignment (rjust, ljust, center)
+# 8. Table-formatted Output Alignment (`rjust`, `ljust`, `center`)
 # -----------------------------------------------------------------------------------------------
 print("name".ljust(10), "score".rjust(5))
 print("Daa".ljust(10), str(95).rjust(5))
@@ -73,9 +73,9 @@ print("Daa".ljust(10), str(95).rjust(5))
 import time
 
 print("3")
-time.sleep(1)  # Wait for 1 second
+time.sleep(1)   # Wait for 1 second
 print("2")
-time.sleep(1)  # Wait for 1 second
+time.sleep(1)   # Wait for 1 second
 print("1")
 
 
