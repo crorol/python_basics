@@ -66,7 +66,7 @@ __init__.py :  A file that indicates the folder is a package
 
 
 
-# 5. __name__ == "__main__" pattern
+# 5. `__name__ == "__main__"` pattern
 # -----------------------------------------------------------------------------------------------
 # module_test.py
 def say_hi():
