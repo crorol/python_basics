@@ -42,7 +42,7 @@ print(not a)     # False
 
 
 
-# 5. Membership Operators (in, not in)
+# 5. Membership Operators (`in`, `not in`)
 # -----------------------------------------------------------------------------------------------
 fruits = ["apple", "banana", "cherry"]
 print("banana" in fruits)      # True
@@ -50,7 +50,7 @@ print("grape" not in fruits)   # True
 
 
 
-# 6. Identity Operators (is, is not)
+# 6. Identity Operators (`is`, `is not`)
 # -----------------------------------------------------------------------------------------------
 x = [1, 2, 3]
 y = [1, 2, 3]
