@@ -105,6 +105,10 @@ with open("img.jpg", "rb") as f:
 
 
 
-# 9. 
+# 9. Using with Exception Handling
 # -----------------------------------------------------------------------------------------------
-
+try:
+    with open("not_exist.txt") as f:
+        print(f.read())
+except FileNotFoundError:
+    print("The file does not exist.")
