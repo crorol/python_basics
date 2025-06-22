@@ -133,12 +133,11 @@ a1.show()  # Daa's balance: $15000
 
 # 10. The four core prinsiples of Object-Oriented Programming (OOP 4 Pillars)
 # -----------------------------------------------------------------------------------------------
-# OOP 4 Pillars
-|---------------|-------------------------------------------------------|
+'''
 | Principle     | Explanation                                           |
 |---------------|-------------------------------------------------------|
 | Abstraction   | Hides complexity and exposes only what is necessary   |
 | Encapsulation | Protects and hides data (e.g., self.__variable)       |
 | Inheritance   | Code reuse by extending a parent class (covered next) |
 | Polymorphism  | Enables different behaviors with the same method name |
-|---------------|-------------------------------------------------------|
+'''
