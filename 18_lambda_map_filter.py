@@ -1,16 +1,17 @@
-# 1. 
+# 1. What is a `lambda` Function?
 # -----------------------------------------------------------------------------------------------
-nums = [1, 2, 3, 4, 5]
-squared = list(map(lambda x: x**2, nums))
-even = list(filter(lambda x: x % 2 == 0, nums))
-print(squared)  # Output: [1, 4, 9, 16, 25]
-print(even)     # Output: [2, 4]
+# unlike a regular function defined with `def` Function,
+# a `lambda` Function doesn't have a name.
+add = lambda a, b: a + b
+print(add(3, 4))   # 7
+
+# Equivalent Regular function Definition
+def add(a, b):
+    return a + b
 
 
 
-
-
-# 2. 
+# 2. `lambda` Basic Grammar
 # -----------------------------------------------------------------------------------------------
 
 
