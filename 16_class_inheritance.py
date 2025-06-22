@@ -79,27 +79,58 @@ Python supports multiple inheritance, but clear separation of responsibilities i
 
 # 5. `isinstance` and `issubclass`
 # -----------------------------------------------------------------------------------------------
+print(isinstance(h, Hamster))   # True
+print(isinstance(h, Animal))    # True
+
+print(issubclass(Hamster, Animal))   # True
 
 
 
-
-
-# 6. 
+# 6. Practical Example
 # -----------------------------------------------------------------------------------------------
+class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def info(self):
+        print(f"Name: {self.name}")
+
+class Student(Person):
+    def __init__(self, name, major):
+        super().__init__(name)
+        self.major = major
+    
+    def info(self):   # Overriding
+        super().info()
+        print(f"Major: {self.major}")
+
+s = Student("Daa", "Computer Science")
+s.info()
 
 
 
-
-
-# 7. 
+# 7. `protected`/`private` Attributes (_, __)
 # -----------------------------------------------------------------------------------------------
+class Parent:
+    def __init__(self):
+        self._protected = "Protected"
+        self.__private = "Private"
+
+p = Parent()
+print(p._protected)         # Not recommended, but possible
+# print(p.__private)        # Error
+print(p._Parent__private)   # Can access via name mangling (not recommended)
 
 
 
-
-
-# 8. 
+# 8. Class Structure Summary
 # -----------------------------------------------------------------------------------------------
+class A:
+    def show(self): print("A")
 
+class B(A): pass
+class C(A): pass
+class D(B, C): pass
 
-
+d = D()
+d.show()  # A -> according to MRO (Method Resolution Order)
