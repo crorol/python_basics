@@ -10,7 +10,7 @@ The loop variable i takes each value in that range and prints it.
 
 
 
-# 2. How to Use range()
+# 2. How to Use `range()`
 # -----------------------------------------------------------------------------------------------
 print(list(range(3)))          # [0, 1, 2]
 print(list(range(2, 6)))       # [2, 3, 4, 5]
@@ -18,7 +18,7 @@ print(list(range(10, 0, -2)))  # [10, 8, 6, 4, 2]
 
 
 
-# 3. while Loop
+# 3. `while` Loop
 # -----------------------------------------------------------------------------------------------
 count = 0
 while count < 3:
@@ -27,7 +27,7 @@ while count < 3:
 
 
 
-# 4. break and continue
+# 4. `break` and `continue`
 # -----------------------------------------------------------------------------------------------
 for i in range(5):
     if i == 3:
@@ -71,7 +71,7 @@ for k, v in person.items():
 
 
 
-# 8. Using enumerate() to access index and value together
+# 8. Using `enumerate()` to access index and value together
 # -----------------------------------------------------------------------------------------------
 fruits = ["apple", "banana", "cherry"]
 
@@ -80,7 +80,7 @@ for i, fruit in enumerate(fruits):
 
 
 
-# 9. for + else Pattern (Uncommon but Useful!)
+# 9. `for + else` Pattern (Uncommon but Useful!)
 # -----------------------------------------------------------------------------------------------
 for n in range(2, 10):
     if n % 7 == 0:
@@ -91,7 +91,7 @@ else:
 
 
 
-# 10. Using zip() to loop through two lists at once
+# 10. Using `zip()` to loop through two lists at once
 # -----------------------------------------------------------------------------------------------
 names = ["Daa", "Hoyoung", "Hodu"]
 scores = [95, 96, 97]
