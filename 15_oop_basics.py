@@ -3,12 +3,12 @@
 class Person:
     pass
 
-p = Person()    # Create an object (instance)
-print(type(p))  # <class '__main__.Person'>
+p = Person()     # Create an object (instance)
+print(type(p))   # <class '__main__.Person'>
 
 
 
-# 2. Constructor (__init__)
+# 2. Constructor (`__init__`)
 # -----------------------------------------------------------------------------------------------
 class Person:
     def __init__(self, name, age):
@@ -63,7 +63,7 @@ p2.greet()
 
 
 
-# 6. __str__ Method
+# 6. `__str__` Method
 # -----------------------------------------------------------------------------------------------
 class Book:
     def __init__(self, title):
