@@ -7,17 +7,17 @@ print(fruits)
 
 # 2. Indexing and Slicing
 # -----------------------------------------------------------------------------------------------
-print(fruits[0])     # 'apple' (first element)
-print(fruits[-1])    # 'cherry' (last element)
-print(fruits[1:3])   # ['banana', 'cherry'] (elements from index 1 to 2)
-print(fruits[::-1])  # reverse the list
+print(fruits[0])      # 'apple' (first element)
+print(fruits[-1])     # 'cherry' (last element)
+print(fruits[1:3])    # ['banana', 'cherry'] (elements from index 1 to 2)
+print(fruits[::-1])   # reverse the list
 
 
 
 # 3. Lists are Mutable (Values Can Be Changed)
 # -----------------------------------------------------------------------------------------------
 fruits[0] = "grape"
-print(fruits)  # ['grape', 'banana', 'cherry']
+print(fruits)   # ['grape', 'banana', 'cherry']
 
 
 
@@ -45,17 +45,17 @@ print(min(nums))     # 2
 
 
 
-# 6. Checking for Membership (in Operator)
+# 6. Checking for Membership (`in` Operator)
 # -----------------------------------------------------------------------------------------------
-print("banana" in fruits)     # True
-print("mango" not in fruits)  # True
+print("banana" in fruits)      # True
+print("mango" not in fruits)   # True
 
 
 
 # 7. Using with Loops
 # -----------------------------------------------------------------------------------------------
 for fruit in fruits:
-    print(fruit)  # Print each fruit in the list
+    print(fruit)    # Print each fruit in the list
 
 # With index
 for i, fruit in enumerate(fruits):
@@ -66,7 +66,7 @@ for i, fruit in enumerate(fruits):
 # 8. List Comprehension (List Embedding)
 # -----------------------------------------------------------------------------------------------
 squares = [x ** 2 for x in range(1, 6)]
-print(squares)  # [1, 4, 9, 16, 25]
+print(squares)   # [1, 4, 9, 16, 25]
 
 evens = [x for x in range(10) if x % 2 == 0]
 
@@ -76,8 +76,8 @@ evens = [x for x in range(10) if x % 2 == 0]
 # -----------------------------------------------------------------------------------------------
 matrix = [[1, 2], [3, 4]]
 
-print(matrix[0])     # [1, 2]
-print(matrix[0][1])  # 2
+print(matrix[0])      # [1, 2]
+print(matrix[0][1])   # 2
 
 
 
@@ -92,4 +92,4 @@ print(a)      # [99, 2, 3]
 c = a[:]      # Copy by slicing
 d = list(a)   # Copy using list()
 import copy
-e = copy.deepcopy(a)  # Deep copy
+e = copy.deepcopy(a)   # Deep copy
