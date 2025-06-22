@@ -1,4 +1,4 @@
-# 1. `math` - related to mathematics
+# 1. `math` - Related to Mathematics
 # -----------------------------------------------------------------------------------------------
 import math
 
@@ -8,7 +8,7 @@ print(math.pi)             # 3.14159...
 
 
 
-# 2. `random` - random number generation
+# 2. `random` - Random Number Generation
 # -----------------------------------------------------------------------------------------------
 import random
 
@@ -18,7 +18,7 @@ print(random.sample(range(100), 5))     # Picks 5 unique samples from numbers 0 
 
 
 
-# 3. `datetime` - handling date and time
+# 3. `datetime` - Handling Date and Time
 # -----------------------------------------------------------------------------------------------
 import datetime
 
@@ -32,7 +32,7 @@ print(tomorrow)
 
 
 
-# 4. `os` - operating system interface
+# 4. `os` - Operating System Interface
 # -----------------------------------------------------------------------------------------------
 import os
 
@@ -42,7 +42,7 @@ print(os.listdir("."))     # List of files and directories in the current direct
 
 
 
-# 5. `sys` - system paprameters / input and output
+# 5. `sys` - System Paprameters / Input and Output
 # -----------------------------------------------------------------------------------------------
 import sys
 
@@ -51,7 +51,7 @@ print(sys.argv)      # Command-line arguments
 
 
 
-# 6. `time` - related to time
+# 6. `time` - Related to Time
 # -----------------------------------------------------------------------------------------------
 import time
 
@@ -61,7 +61,7 @@ print("End")
 
 
 
-# 7. `collections` - advanced data structures
+# 7. `collections` - Advanced Data Structures
 # -----------------------------------------------------------------------------------------------
 from collections import Counter, defaultdict
 
@@ -74,7 +74,7 @@ print(dd)    # Automatically creates default values
 
 
 
-# 8. `itertools` - utilities for iteration
+# 8. `itertools` - Utilities for Iteration
 # -----------------------------------------------------------------------------------------------
 from itertools import permutations, combinations
 
@@ -86,7 +86,7 @@ print(list(combinations([1, 2, 3], 2)))
 
 
 
-# 9. `json` - handling JSON data
+# 9. `json` - Handling JSON Data
 # -----------------------------------------------------------------------------------------------
 import json
 
@@ -99,7 +99,7 @@ print(parsed["name"])  # Daa
 
 
 
-# 10. `re` - regular expression
+# 10. `re` - Regular Expression
 # -----------------------------------------------------------------------------------------------
 import re
 
@@ -110,7 +110,7 @@ if match:
 
 
 
-# 11. `urllib` - handling URL
+# 11. `urllib` - Handling URL
 # -----------------------------------------------------------------------------------------------
 from urllib.request import urlopen
 
@@ -121,7 +121,7 @@ print(html[:200])
 
 
 
-# 12. `pathlib` - handling file paths (Python 3.4+)
+# 12. `pathlib` - Handling File Paths (Python 3.4+)
 # -----------------------------------------------------------------------------------------------
 from pathlib import Path
 
@@ -131,18 +131,27 @@ for file in p.iterdir():
 
 
 
-# 13. `statistics` - mean/variance/standard deviation
+# `statistics` - Mean / Variance / Standard Deviation
 # -----------------------------------------------------------------------------------------------
+import statistics
+
+data = [1, 2, 3, 4, 5]
+print(statistics.mean(data))       # Mean
+print(statistics.variance(data))   # Variance
+print(statistics.stdev(data))      # Standard Deviation
 
 
 
-
-
-
-# 14. 
+# 14. `enum` - Enumeration
 # -----------------------------------------------------------------------------------------------
+from enum import Enum
 
+class Color(Enum):
+    RED = 1
+    GREEN = 2
 
+print(Color.RED)         # Color.RED
+print(Color.RED.value)   # 1
 
 
 
@@ -152,5 +161,5 @@ for file in p.iterdir():
 
 
 
-# 9. 
+# 16. 
 # -----------------------------------------------------------------------------------------------
