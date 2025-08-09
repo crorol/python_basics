@@ -150,8 +150,8 @@ class Color(Enum):
     RED = 1
     GREEN = 2
 
-print(Color.RED)         # Color.RED
-print(Color.RED.value)   # 1
+print(Color.RED)          # Color.RED
+print(Color.RED.value)    # 1
 
 
 
